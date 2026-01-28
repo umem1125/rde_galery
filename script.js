@@ -41,19 +41,19 @@ const products = [
     title: "RDE Galery",
     description:
       "Bros mewah dengan dominasi lapis emas 18K. Permata zircon berkilau menambah kesan luxury. Perfect untuk acara special.",
-    image: "assets/img/bros_besar/bros_besar_5.jpeg",
+    image: "assets/img/bros_kecil/img1.jpeg",
   },
   {
     title: "RDE Galery",
     description:
       "Design vintage yang timeless. Kombinasi sempurna antara classic dan modern. Material premium yang awet bertahun-tahun.",
-    image: "assets/img/bros_besar/bros_besar_6.jpeg",
+    image: "assets/img/bros_kecil/img2.jpeg",
   },
   {
     title: "RDE Galery",
     description:
       "Bros dengan motif floral yang feminim. Detail halus dengan finishing sempurna. Cocok untuk melengkapi hijab atau outfit formal.",
-    image: "assets/img/bros_besar/bros_besar_7.jpeg",
+    image: "assets/img/bros_kecil/img3.jpeg",
   },
 ];
 
