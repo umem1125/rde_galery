@@ -1,3 +1,22 @@
+//
+// Burger Menu Toggle
+function toggleMenu() {
+  const burgerMenu = document.querySelector(".burger-menu");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const menuOverlay = document.querySelector(".menu-overlay");
+
+  burgerMenu.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+  menuOverlay.classList.toggle("active");
+
+  // Prevent body scroll when menu is open
+  if (mobileMenu.classList.contains("active")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}
+
 // Product data
 const products = [
   {
