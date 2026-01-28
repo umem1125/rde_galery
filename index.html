@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RDE Gallery - Premium Brooch Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">RDE GALLERY</div>
+          <div class="social-links">
+            <a
+              href="https://www.tiktok.com/@rde.galery02"
+              target="_blank"
+              class="social-btn tiktok"
+            >
+              <span>📱</span> TikTok
+            </a>
+            <a
+              href="https://id.shp.ee/zyRt2Xh"
+              target="_blank"
+              class="social-btn shopee"
+            >
+              <span>🛍️</span> Shopee
+            </a>
+            <a
+              href="https://wa.me/6282114244700"
+              target="_blank"
+              class="social-btn whatsapp"
+            >
+              <span>💬</span> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Premium Brooch Collection</h1>
+          <p>
+            Koleksi bros eksklusif dengan permata zircon original, lapis emas
+            18K, dan mutiara air tawar. Elegan, awet, dan limited edition.
+          </p>
+          <a
+            href="https://wa.me/6282114244700"
+            target="_blank"
+            class="cta-button"
+          >
+            <span>✨</span> Pesan Sekarang
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <div class="container">
+        <h2 class="section-title">Koleksi Produk Kami</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openModal(0)">
+            <img
+              src="assets/img/bros_besar/bros_besar_2.jpeg"
+              alt="Bros Permata Zircon"
+            />
+            <div class="gallery-overlay">
+              <h3>Bros Permata Zircon Classic</h3>
+              <p>Klik untuk detail</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(1)">
+            <img
+              src="assets/img/bros_besar/bros_besar_3.jpeg"
+              alt="Bros Mutiara Elegant"
+            />
+            <div class="gallery-overlay">
+              <h3>Bros Mutiara Elegant</h3>
+              <p>Klik untuk detail</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(2)">
+            <img
+              src="assets/img/bros_besar/bros_besar_4.jpeg"
+              alt="Bros Shell Premium"
+            />
+            <div class="gallery-overlay">
+              <h3>Bros Shell Premium</h3>
+              <p>Klik untuk detail</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(3)">
+            <img
+              src="assets/img/bros_besar/bros_besar_5.jpeg"
+              alt="Bros Gold Luxury"
+            />
+            <div class="gallery-overlay">
+              <h3>Bros Gold Luxury</h3>
+              <p>Klik untuk detail</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(4)">
+            <img
+              src="assets/img/bros_besar/bros_besar_6.jpeg"
+              alt="Bros Vintage Collection"
+            />
+            <div class="gallery-overlay">
+              <h3>Bros Vintage Collection</h3>
+              <p>Klik untuk detail</p>
+            </div>
+          </div>
+          <div class="gallery-item" onclick="openModal(5)">
+            <img
+              src="assets/img/bros_besar/bros_besar_7.jpeg"
+              alt="Bros Floral Design"
+            />
+            <div class="gallery-overlay">
+              <h3>Bros Floral Design</h3>
+              <p>Klik untuk detail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">×</button>
+        <img id="modalImage" class="modal-image" src="" alt="" />
+        <div class="modal-details">
+          <h2 id="modalTitle"></h2>
+          <div class="price" id="modalPrice"></div>
+          <div class="description" id="modalDescription"></div>
+          <div class="modal-features">
+            <div class="modal-feature">
+              <span>💎</span>
+              <span>Permata Zircon Original</span>
+            </div>
+            <div class="modal-feature">
+              <span>✨</span>
+              <span>Lapis Emas 18K</span>
+            </div>
+            <div class="modal-feature">
+              <span>🦪</span>
+              <span>Mutiara Air Tawar</span>
+            </div>
+            <div class="modal-feature">
+              <span>⭐</span>
+              <span>Limited Edition</span>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <a
+              href="https://id.shp.ee/zyRt2Xh"
+              target="_blank"
+              class="modal-btn primary"
+            >
+              <span>🛍️</span> Beli di Shopee
+            </a>
+            <a
+              href="https://wa.me/6282114244700"
+              target="_blank"
+              class="modal-btn secondary"
+            >
+              <span>💬</span> Chat WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Keunggulan Produk Kami</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <span class="feature-icon">💎</span>
+            <h3>Permata Zircon Original</h3>
+            <p>
+              Menggunakan permata zircon asli yang berkualitas tinggi dengan
+              kilau sempurna
+            </p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">✨</span>
+            <h3>Lapis Emas Asli 18K</h3>
+            <p>
+              Dilapisi dengan emas asli 18 karat untuk tampilan mewah yang tahan
+              lama
+            </p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🦪</span>
+            <h3>Mutiara Air Tawar</h3>
+            <p>
+              Mutiara air tawar pilihan yang menambah kesan elegan dan berkelas
+            </p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🐚</span>
+            <h3>Shell Cangkang Asli</h3>
+            <p>
+              Shell dari cangkang kerang asli untuk detail natural yang unik
+            </p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">⭐</span>
+            <h3>Stok Limited Edition</h3>
+            <p>Koleksi terbatas dan eksklusif, tidak diproduksi massal</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🛡️</span>
+            <h3>Awet Bertahun-tahun</h3>
+            <p>Kualitas premium yang tahan lama dan tidak mudah pudar</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📍</span>
+            <h3>Jarum Halus & Aman</h3>
+            <p>Jarum tajam halus yang tidak merusak kain pakaian Anda</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title">Testimoni Pelanggan</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "Bros nya cantik banget! Permata nya kinclong dan lapis emas nya
+              bagus. Udah pake beberapa bulan masih seperti baru. Worth it
+              banget!"
+            </p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">S</div>
+              <div class="reviewer-info">
+                <h4>Siti Nurhaliza</h4>
+                <p>Jakarta</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "Kualitas premium dengan harga yang reasonable. Mutiara nya asli
+              dan detail shell nya unik. Sering dipuji kalau pakai bros dari RDE
+              Gallery!"
+            </p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">A</div>
+              <div class="reviewer-info">
+                <h4>Amelia Putri</h4>
+                <p>Bandung</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">
+              "Packaging nya rapih, barang sesuai gambar bahkan lebih bagus.
+              Jarum nya halus jadi aman buat hijab. Pasti order lagi untuk
+              koleksi!"
+            </p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">D</div>
+              <div class="reviewer-info">
+                <h4>Dewi Lestari</h4>
+                <p>Surabaya</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Dapatkan Bros Premium Anda</h2>
+        <p>Stok terbatas! Pesan sekarang sebelum kehabisan</p>
+        <div class="cta-buttons">
+          <a
+            href="https://www.tiktok.com/@rde.galery02"
+            target="_blank"
+            class="cta-btn tiktok"
+          >
+            <span>📱</span> Lihat di TikTok
+          </a>
+          <a
+            href="https://id.shp.ee/zyRt2Xh"
+            target="_blank"
+            class="cta-btn shopee"
+          >
+            <span>🛍️</span> Belanja di Shopee
+          </a>
+          <a
+            href="https://wa.me/6282114244700"
+            target="_blank"
+            class="cta-btn whatsapp"
+          >
+            <span>💬</span> Chat WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">RDE GALLERY</div>
+          <p class="footer-text">
+            Koleksi bros premium dengan kualitas terbaik. Original permata
+            zircon, lapis emas 18K, dan mutiara air tawar.
+          </p>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2026 RDE Gallery. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
